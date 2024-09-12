@@ -43,3 +43,17 @@ def sorted_logs(log_entries):
 
    return final_output
 
+log_entries = [
+   {
+      "micro-service-a1": {'log_type': 'INFO', 'date': 'Wed July 24 2023', 'time': '12:30:00 GMT+0530'},
+      "micro-service-c1": {'log_type': 'ERROR', 'date': 'Wed July 24 2023', 'time': '12:40:00 GMT+0530'},
+      "micro-service-c2": {'log_type': 'DEBUG', 'date': 'Wed July 24 2023', 'time': '12:35:00 GMT+0530'},
+      "micro-service-d1": {'log_type': 'ERROR', 'date': 'Wed July 24 2023', 'time': '12:20:00 GMT+0530'},
+      "micro-service-b2": {'log_type': 'INFO', 'date': 'Wed July 24 2023', 'time': '12:45:00 GMT+0530'}
+   }
+]
+
+result = sorted_logs(log_entries)
+
+for log in result:
+   print(log)
